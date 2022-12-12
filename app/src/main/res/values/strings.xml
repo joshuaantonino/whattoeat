@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">What to Eat</string>
+    <string name="sign_up">Sign up</string>
+    <string name="log_in">Log in</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_back_user">Welcome Back User!</string>
+    <string name="server_client_id">630647270449-v2p3tc75dejibd93fvefe0505skbf3rn.apps.googleusercontent.com</string>
+</resources>
