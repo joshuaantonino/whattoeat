@@ -16,20 +16,38 @@
         android:theme="@style/Theme.WhattoEat"
         tools:targetApi="31">
         <activity
-            android:name=".Categories"
+            android:name=".Fridge"
             android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".AllRecipes"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GroceryList"
+            android:exported="true">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Categories"
+            android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
 
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-
             android:name=".WhattoEat"
             android:exported="true">
             <meta-data
@@ -41,10 +59,8 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
-
             android:name=".LogIn"
             android:exported="true">
             <meta-data
@@ -52,10 +68,8 @@
                 android:value="" />
 
             <intent-filter>
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".SignUp"

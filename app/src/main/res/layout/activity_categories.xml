@@ -4,6 +4,92 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B5DFC1"
     tools:context=".Categories">
+
+    <ImageButton
+        android:id="@+id/Logout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="#006200EE"
+        android:soundEffectsEnabled="true"
+        android:src="@drawable/ic_baseline_logout_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <Button
+        android:id="@+id/btnglist"
+        android:layout_width="172dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="196dp"
+        android:text="Grocery List"
+        app:layout_constraintBottom_toTopOf="@+id/recipes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/glist"
+        android:layout_width="345dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/grocery_foreground" />
+
+    <Button
+        android:id="@+id/btnrecipes"
+        android:layout_width="172dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="160dp"
+        android:text="RECIPES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnglist"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/recipes"
+        android:layout_width="345dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glist"
+        app:srcCompat="@mipmap/recipes_foreground" />
+
+    <Button
+        android:id="@+id/btnfridge"
+        android:layout_width="173dp"
+        android:layout_height="81dp"
+        android:layout_marginTop="160dp"
+        android:text="WHAT TO EAT INSIDE MY FRIDGE?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnrecipes"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <ImageView
+        android:id="@+id/fridge"
+        android:layout_width="345dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glist"
+        app:layout_constraintVertical_bias="0.195"
+        app:srcCompat="@mipmap/fridge_foreground" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
